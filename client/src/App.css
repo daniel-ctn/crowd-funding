@@ -1,9 +1,9 @@
 .container {
-    @apply flex flex-row items-start justify-start min-h-screen max-w-screen-2xl bg-slate-800 mx-auto;
+    @apply flex flex-row items-start justify-start min-h-screen max-w-screen-2xl mx-auto;
 }
 
 .left-sidebar {
-    @apply w-52 h-screen;
+    @apply w-56 h-screen;
 }
 
 .right-content {

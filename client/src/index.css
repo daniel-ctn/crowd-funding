@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-gray-600;
-  }
+    body {
+        @apply font-josefin bg-slate-800;
+    }
 }
 
 @layer utilities {
@@ -14,14 +14,22 @@
     }
 
     .heading-1 {
-        @apply text-4xl font-bold text-gray-200;
+        @apply text-4xl font-bold;
     }
 
     .heading-2 {
-        @apply text-3xl font-bold text-gray-200;
+        @apply text-3xl font-semibold;
     }
 
     .heading-3 {
-        @apply text-2xl font-medium text-gray-200;
+        @apply text-2xl font-medium;
+    }
+
+    .heading-5 {
+        @apply text-xl font-normal;
+    }
+
+    .primary-btn {
+        @apply bg-teal-400 text-gray-600 font-medium text-lg px-6 py-2 rounded-lg shadow-md hover:bg-teal-500 transition duration-300;
     }
 }

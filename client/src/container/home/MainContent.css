@@ -1,0 +1,20 @@
+.main-content__wrapper {
+    @apply flex flex-col items-center justify-start w-full h-full px-6 py-4;
+}
+
+.input-container {
+    @apply flex items-center justify-center gap-3 w-full h-12;
+}
+
+.input-container__input {
+    @apply w-[60%] h-full px-6 border border-cyan-900 rounded-lg bg-slate-700 text-xl text-gray-300 font-medium focus:outline-none;
+}
+
+.input-container__input:focus {
+    @apply border-cyan-400;
+}
+
+.input-container__btn {
+    @apply flex justify-center items-center gap-2 h-full px-6 bg-teal-600 text-lg text-gray-100 rounded-lg shadow-md
+    hover:bg-teal-700 active:bg-teal-800 active:translate-y-0.5 transition duration-300;
+}
