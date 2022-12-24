@@ -1,12 +1,14 @@
 import { ConnectWallet } from '@thirdweb-dev/react'
 
+import './App.css'
+
 export default function Home() {
   return (
-    <main className="max-w-screen-2xl mx-auto min-h-screen">
-      <div className="w-60">
+    <main className="container">
+      <div className="w-48">
         <ConnectWallet />
       </div>
-      <h2 className="text-2xl text-white">Daniel</h2>
+      <h2 className="heading-3">Daniel</h2>
     </main>
   )
 }

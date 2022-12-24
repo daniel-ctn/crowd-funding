@@ -1,9 +1,9 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App'
 import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react'
 import { BrowserRouter } from 'react-router-dom'
 
+import App from './App'
 import './index.css'
 
 // This is the chainId your dApp will work on.
