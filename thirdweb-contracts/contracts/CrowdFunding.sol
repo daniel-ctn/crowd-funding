@@ -19,7 +19,6 @@ contract CrowdFunding {
     uint256 public campaignCount = 0;
 
     function createCampaign(
-        address _owner,
         string memory _title,
         string memory _description,
         uint256 _target,
@@ -31,7 +30,6 @@ contract CrowdFunding {
         campaignCount++;
         campaigns[campaignCount] = Campaign(
             msg.sender,
-            _owner,
             _title,
             _description,
             _target,
