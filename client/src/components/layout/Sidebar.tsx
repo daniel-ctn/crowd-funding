@@ -9,7 +9,7 @@ import './Sidebar.css'
 const Sidebar: FC = () => {
   return (
     <div className="sidebar-container">
-      <ul className="menu">
+      <ul className="sidebar-menu">
         <li>
           <img src={dashboardIcon} alt="Dashboard" />
           Dashboard
