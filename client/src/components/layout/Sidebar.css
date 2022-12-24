@@ -1,0 +1,12 @@
+.sidebar-container {
+    @apply w-52 h-screen border-r border-r-cyan-700
+}
+
+.menu {
+    @apply flex flex-col items-center justify-center w-full h-full px-4
+}
+
+.menu > li {
+    @apply flex gap-3 justify-center items-center text-white text-center font-medium my-3 w-full px-2 py-2
+    rounded-lg border-2 border-cyan-400 hover:bg-cyan-800 transition duration-300 cursor-pointer
+}
