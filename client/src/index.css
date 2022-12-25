@@ -4,7 +4,11 @@
 
 @layer base {
     body {
-        @apply font-josefin bg-slate-800;
+        @apply font-josefin bg-slate-800 scrollbar-thin scrollbar-thumb-teal-600 scrollbar-track-transparent scrollbar-thumb-rounded;
+    }
+
+    textarea {
+        @apply resize-none scrollbar-thin scrollbar-thumb-teal-600 scrollbar-track-transparent scrollbar-thumb-rounded;
     }
 }
 
@@ -30,6 +34,6 @@
     }
 
     .primary-btn {
-        @apply bg-teal-400 text-gray-600 font-medium text-lg px-6 py-2 rounded-lg shadow-md hover:bg-teal-500 transition duration-300;
+        @apply bg-teal-700 text-gray-100 font-medium text-lg px-8 py-2.5 rounded-lg shadow-md hover:bg-teal-500 transition duration-300;
     }
 }

@@ -1,0 +1,31 @@
+.create-campaign__wrapper {
+    @apply flex flex-col items-center justify-start w-full h-full px-4 pt-10 pb-4;
+}
+
+.create-campaign__form {
+    @apply flex flex-col items-center justify-start w-[40rem] max-w-[80%] h-full gap-8;
+}
+
+.create-campaign__form--title {
+    @apply text-3xl text-gray-100 font-medium;
+}
+
+.create-campaign__form--input {
+    @apply flex flex-col items-start justify-start w-full h-full gap-2;
+}
+
+.create-campaign__form--input > label {
+    @apply text-xl text-gray-200;
+}
+
+.create-campaign__form--input > input, .create-campaign__form--input > textarea {
+    @apply w-full h-12 px-5 border border-cyan-900 rounded-lg bg-slate-700 text-xl text-gray-300 font-medium focus:outline-none;
+}
+
+.create-campaign__form--input > input:focus, .create-campaign__form--input > textarea:focus {
+    @apply border-cyan-400;
+}
+
+.create-campaign__form--input > textarea {
+    @apply min-h-[10rem] py-4;
+}

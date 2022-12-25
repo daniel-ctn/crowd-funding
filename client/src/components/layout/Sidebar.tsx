@@ -1,43 +1,39 @@
 import { FC } from 'react'
 
-import profileIcon from '@assets/profile.svg'
-import dashboardIcon from '@assets/dashboard.svg'
-import createCampaignIcon from '@assets/create-campaign.svg'
-import paymentIcon from '@assets/payment.svg'
-import withdrawIcon from '@assets/withdraw.svg'
-import logoutIcon from '@assets/logout.svg'
+import { createCampaign, dashboard, payment, withdraw, profile, logout } from '@assets'
 
 import './Sidebar.css'
+import { NavLink } from 'react-router-dom'
 
 const Sidebar: FC = () => {
   return (
     <div className="sidebar-container">
-      <ul className="sidebar-menu">
-        <li>
-          <img src={dashboardIcon} alt="Dashboard" />
+      <div className="sidebar-menu">
+        <NavLink to="/">
+          <img src={dashboard} alt="Dashboard" />
           Dashboard
-        </li>
-        <li>
-          <img src={createCampaignIcon} alt="Dashboard" />
+        </NavLink>
+        <NavLink to="/create">
+          <img src={createCampaign} alt="Dashboard" />
           Create
-        </li>
-        <li>
-          <img src={paymentIcon} alt="Payment" />
+        </NavLink>
+        <NavLink to="/">
+          <img src={payment} alt="Payment" />
           Payment
-        </li>
-        <li>
-          <img src={withdrawIcon} alt="Withdraw" />
+        </NavLink>
+        <NavLink to="/">
+          <img src={withdraw} alt="Withdraw" />
           Withdraw
-        </li>
-        <li>
-          <img src={profileIcon} alt="Profile" />
+        </NavLink>
+        <NavLink to="/">
+          <img src={profile} alt="Profile" />
           Profile
-        </li>
-        <li>
-          <img src={logoutIcon} alt="Log out" />
+        </NavLink>
+        <NavLink to="/">
+          <img src={logout} alt="Log out" />
           Log out
-        </li>
-      </ul>
+        </NavLink>
+      </div>
     </div>
   )
 }

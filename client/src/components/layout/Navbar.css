@@ -3,5 +3,5 @@
 }
 
 .navbar-heading {
-    @apply text-teal-400 ml-6;
+    @apply text-teal-400;
 }

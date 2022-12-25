@@ -1,16 +1,16 @@
 .sidebar-container {
-    @apply w-full h-full border-r border-r-cyan-900
+    @apply w-full h-full
 }
 
 .sidebar-menu {
     @apply flex flex-col items-center justify-center w-full h-full px-6
 }
 
-.sidebar-menu > li {
-    @apply h-12 flex gap-3 justify-center items-center text-gray-300 text-center font-medium my-3 w-full
-    rounded-lg border-2 border-cyan-400 hover:bg-cyan-800 hover:text-gray-200 transition duration-300 cursor-pointer
+.sidebar-menu > a {
+    @apply h-12 flex gap-2.5 justify-center items-center text-gray-300 text-center font-medium my-3 w-full
+    rounded-lg border-2 border-cyan-500 hover:bg-cyan-800 hover:text-gray-200 transition duration-300 cursor-pointer
 }
 
-.sidebar-menu > li > img {
-    @apply w-5 h-5
+.sidebar-menu > a > img {
+    @apply w-[1.15rem] h-[1.15rem] mb-1
 }
