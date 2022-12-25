@@ -7,8 +7,8 @@
 }
 
 .sidebar-menu > a {
-    @apply h-12 flex gap-2.5 justify-center items-center text-gray-300 text-center font-medium my-3 w-full
-    rounded-lg border-2 border-cyan-500 hover:bg-cyan-800 hover:text-gray-200 transition duration-300 cursor-pointer
+    @apply h-12 flex gap-2.5 justify-center items-center text-gray-300 text-center font-medium my-2 w-full
+    rounded-lg border-2 border-teal-500 hover:bg-teal-800 hover:text-gray-200 transition duration-300 cursor-pointer
 }
 
 .sidebar-menu > a > img {

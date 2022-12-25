@@ -4,19 +4,22 @@
 
 @layer base {
     body {
-        @apply font-josefin bg-slate-800 scrollbar-thin scrollbar-thumb-teal-600 scrollbar-track-transparent scrollbar-thumb-rounded;
+        @apply font-josefin bg-slate-800
+        scrollbar-thin scrollbar-thumb-orange-700 scrollbar-track-transparent scrollbar-thumb-rounded;
     }
 
     textarea {
-        @apply resize-none scrollbar-thin scrollbar-thumb-teal-600 scrollbar-track-transparent scrollbar-thumb-rounded;
+        @apply resize-none scrollbar-thin scrollbar-thumb-orange-700 scrollbar-track-transparent scrollbar-thumb-rounded;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 }
 
-@layer utilities {
-    .linear-gradient {
-        background-image: linear-gradient(179.14deg, rgba(32, 18, 63, 0) -7.14%, #000 87.01%);
-    }
-
+@layer components {
     .heading-1 {
         @apply text-4xl font-bold;
     }
@@ -34,6 +37,20 @@
     }
 
     .primary-btn {
-        @apply bg-teal-700 text-gray-100 font-medium text-lg px-8 py-2.5 rounded-lg shadow-md hover:bg-teal-500 transition duration-300;
+        @apply bg-teal-700 text-gray-100 font-medium text-lg px-8 py-2.5 rounded-lg shadow-md
+        hover:bg-teal-500 transition duration-300;
+    }
+
+    .secondary-btn {
+        @apply bg-slate-800 text-gray-100 font-medium text-lg px-8 py-2.5 rounded-lg shadow-md
+        hover:ring hover:ring-slate-600 transition duration-300;
+    }
+
+    .common-input {
+        @apply border border-cyan-900 rounded-lg bg-slate-700 text-xl text-gray-300 font-medium focus:outline-none;
+    }
+
+    .common-input:focus {
+        @apply border-cyan-400;
     }
 }

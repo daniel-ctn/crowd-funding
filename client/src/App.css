@@ -1,11 +1,15 @@
 .container {
-    @apply flex flex-row items-start justify-start min-h-screen max-w-screen-2xl mx-auto;
+    @apply relative flex flex-col items-start justify-start min-h-screen max-w-screen-2xl mx-auto;
 }
 
-.left-sidebar {
-    @apply w-56 h-screen;
+.content {
+    @apply relative flex items-start justify-start w-full h-full;
+}
+
+.left-content {
+    @apply w-56 h-[calc(100vh-6rem)] fixed inset-0;
 }
 
 .right-content {
-    @apply flex flex-col items-start justify-start grow h-full;
+    @apply flex flex-col items-start justify-start grow h-full overflow-y-auto;
 }

@@ -11,15 +11,17 @@ import './App.css'
 export default function App() {
   return (
     <main className="container">
-      <div className="left-sidebar">
-        <Sidebar />
-      </div>
-      <div className="right-content">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/create" element={<CreateCampaign />} />
-        </Routes>
+      <Navbar />
+      <div className="content">
+        <div className="left-content">
+          <Sidebar />
+        </div>
+        <div className="right-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/create" element={<CreateCampaign />} />
+          </Routes>
+        </div>
       </div>
     </main>
   )

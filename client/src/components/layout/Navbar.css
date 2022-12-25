@@ -1,7 +1,7 @@
 .navbar-container {
-    @apply w-full h-24 bg-slate-800 flex flex-row items-center justify-between px-6 border-b border-cyan-900;
+    @apply sticky inset-0 z-10 w-full h-[6.5rem] bg-slate-800 flex flex-row items-center justify-between px-6 pt-2 border-b border-cyan-900;
 }
 
 .navbar-heading {
-    @apply text-teal-400;
+    @apply text-teal-500;
 }
