@@ -6,6 +6,7 @@ import { useAddress, useContract, useContractWrite, useMetamask } from '@thirdwe
 
 import { money } from '@assets'
 import './MainContent.css'
+import Loading from '@components/common/Loading'
 
 const schema = yup
   .object({
@@ -24,6 +25,7 @@ const MainContent: FC = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isValid },
   } = useForm<FormData>({
     resolver: yupResolver(schema),
@@ -36,12 +38,13 @@ const MainContent: FC = () => {
   const submitForm = async (data: FormData) => {
     try {
       const result = await createCampaign([data.title, data.story, data.goal, data.deadline.getTime(), ''])
+      reset()
     } catch (e) {
       console.log(e)
     }
   }
 
-  if(isLoading) return <div>Loading...</div>
+  if (isLoading) return <Loading />
 
   return (
     <div className="create-campaign__wrapper">

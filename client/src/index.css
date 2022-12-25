@@ -47,7 +47,7 @@
     }
 
     .common-input {
-        @apply border border-cyan-900 rounded-lg bg-slate-700 text-xl text-gray-300 font-medium focus:outline-none;
+        @apply border border-cyan-900 rounded-lg bg-slate-700 text-lg text-gray-300 font-medium focus:outline-none;
     }
 
     .common-input:focus {

@@ -1,11 +1,14 @@
 import { FC } from 'react'
+import { NavLink } from 'react-router-dom'
+import { useDisconnect } from '@thirdweb-dev/react'
 
 import { createCampaign, dashboard, payment, withdraw, profile, logout } from '@assets'
 
 import './Sidebar.css'
-import { NavLink } from 'react-router-dom'
 
 const Sidebar: FC = () => {
+  const disconnect = useDisconnect()
+
   return (
     <div className="sidebar-container">
       <div className="sidebar-menu">
@@ -29,10 +32,10 @@ const Sidebar: FC = () => {
           <img src={profile} alt="Profile" />
           Profile
         </NavLink>
-        <NavLink to="/">
+        <button onClick={disconnect}>
           <img src={logout} alt="Log out" />
           Log out
-        </NavLink>
+        </button>
       </div>
     </div>
   )
