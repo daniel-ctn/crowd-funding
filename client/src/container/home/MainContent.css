@@ -1,5 +1,5 @@
 .main-content__wrapper {
-    @apply flex flex-col items-center justify-start w-full h-full px-4 pt-10 pb-4;
+    @apply flex flex-col items-center justify-start w-full h-full px-4 pt-10 pb-4 gap-16;
 }
 
 .input-container {
@@ -12,4 +12,24 @@
 
 .input-container__btn {
     @apply flex justify-center items-center gap-2;
+}
+
+.heading {
+    @apply text-gray-200;
+}
+
+.table-container {
+    @apply flex items-start justify-center w-full h-full pb-4 px-12;
+}
+
+.table-container__table {
+    @apply w-full table text-gray-400 border-separate space-y-6 text-base;
+}
+
+.table-container__table > thead > tr > th {
+    @apply bg-slate-800 border-b border-gray-700 p-3 text-left text-lg;
+}
+
+.table-container__table > tbody > tr > td {
+    @apply bg-slate-800 border-b border-gray-700 p-3;
 }

@@ -29,24 +29,19 @@ const MainContent: FC = () => {
     resolver: yupResolver(schema),
   })
   const { contract } = useContract('0x25dDFDFD6bab1C61Dad40AcC947Cf9Ba2A9Df7C1')
-  const { mutateAsync: createCampaign } = useContractWrite(contract, 'createCampaign')
+  const { mutateAsync: createCampaign, isLoading } = useContractWrite(contract, 'createCampaign')
   const address = useAddress()
   const connect = useMetamask()
 
   const submitForm = async (data: FormData) => {
-    console.log(data)
     try {
-      await createCampaign([
-        data.title,
-        data.story,
-        data.goal,
-        data.deadline.getTime(),
-        '',
-      ])
+      const result = await createCampaign([data.title, data.story, data.goal, data.deadline.getTime(), ''])
     } catch (e) {
       console.log(e)
     }
   }
+
+  if(isLoading) return <div>Loading...</div>
 
   return (
     <div className="create-campaign__wrapper">

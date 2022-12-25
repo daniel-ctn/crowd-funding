@@ -7,7 +7,7 @@
 }
 
 .left-content {
-    @apply w-56 h-[calc(100vh-6rem)] fixed inset-0;
+    @apply w-56 h-[calc(100vh-6rem)] sticky inset-0;
 }
 
 .right-content {

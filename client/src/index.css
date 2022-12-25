@@ -5,11 +5,11 @@
 @layer base {
     body {
         @apply font-josefin bg-slate-800
-        scrollbar-thin scrollbar-thumb-orange-700 scrollbar-track-transparent scrollbar-thumb-rounded;
+        scrollbar-thin scrollbar-thumb-cyan-600 scrollbar-track-cyan-900 scrollbar-thumb-rounded;
     }
 
     textarea {
-        @apply resize-none scrollbar-thin scrollbar-thumb-orange-700 scrollbar-track-transparent scrollbar-thumb-rounded;
+        @apply resize-none scrollbar-thin scrollbar-thumb-cyan-600 scrollbar-track-cyan-900 scrollbar-thumb-rounded;
     }
 
     input[type="number"]::-webkit-inner-spin-button,
